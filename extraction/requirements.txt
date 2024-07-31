@@ -1,0 +1,14 @@
+jupyterlab
+jupyterlab-execute-time
+jupyterlab_vim
+ipywidgets
+
+pdfplumber
+
+pymupdf4llm
+
+camelot-py
+opencv-python
+ghostscript
+pandas
+matplotlib
