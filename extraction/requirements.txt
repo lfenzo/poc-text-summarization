@@ -6,6 +6,7 @@ ipywidgets
 pdfplumber
 
 pymupdf4llm
+llama_index
 
 camelot-py
 opencv-python
