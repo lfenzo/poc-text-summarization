@@ -4,10 +4,9 @@ jupyterlab_vim
 ipywidgets
 
 pdfplumber
-
+PyPDF2
 pymupdf4llm
 llama_index
-
 camelot-py
 opencv-python
 ghostscript
