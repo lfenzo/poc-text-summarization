@@ -27,11 +27,6 @@ services:
       - ./outputs:/outputs:Z
     env_file:
       - ./ENV
-    command: [
-      "bash",
-      "-c",
-      "jupyter lab --ip=0.0.0.0 --port 8889 --no-browser --allow-root --notebook-dir=/summarization"
-    ]
     deploy:
       resources:
         reservations:

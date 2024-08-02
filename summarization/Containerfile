@@ -3,14 +3,19 @@ FROM nvidia/cuda:12.4.0-devel-ubuntu22.04
 RUN apt update && apt install -y \
     wget \
     bzip2 \
+    curl \
+    supervisor \
     git \
     ca-certificates \
     python3-pip
 
 COPY ./requirements.txt requirements.txt
-
 ENV CMAKE_ARGS="-DGGML_CUDA=on"
-
 RUN pip install -r requirements.txt
-
 EXPOSE 8889
+
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+RUN curl -fsSL https://ollama.com/install.sh | sh
+
+CMD ["supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
