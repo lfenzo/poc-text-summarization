@@ -15,6 +15,7 @@ RUN pip install -r requirements.txt
 EXPOSE 8889
 
 ENV OLLAMA_MODELS="/summarization/models/"
+ENV OLLAMA_NUM_PARALLEL=3
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
