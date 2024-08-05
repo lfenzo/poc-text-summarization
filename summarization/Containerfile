@@ -14,6 +14,8 @@ ENV CMAKE_ARGS="-DGGML_CUDA=on"
 RUN pip install -r requirements.txt
 EXPOSE 8889
 
+ENV OLLAMA_MODELS="/summarization/models/"
+
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 RUN curl -fsSL https://ollama.com/install.sh | sh

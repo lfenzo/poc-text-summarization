@@ -19,7 +19,7 @@ services:
     build:
       context: summarization/
       dockerfile: Containerfile
-    image: summarization
+    image: text-summarization
     ports:
       - 8889:8889
     volumes:
