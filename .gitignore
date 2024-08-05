@@ -1,3 +1,6 @@
 .ipynb_checkpoints/
 
 models/
+
+extraction/input/
+!extraction/input/digital-thermometer-ds18b20.pdf
