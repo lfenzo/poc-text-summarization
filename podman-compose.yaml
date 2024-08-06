@@ -24,7 +24,7 @@ services:
       - 8889:8889
     volumes:
       - ./summarization:/summarization:Z
-      - ./outputs:/outputs:Z
+      - ./outputs:/outputs/:Z
     env_file:
       - ./ENV
     deploy:
